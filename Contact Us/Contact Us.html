@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Norma, Ricardo, Jarod">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/Contact Us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <title>Fortify Force</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>      
+        </div>
+        <a href="../Home/home.html">
+            <div class="logoS"> <!--logo en la parte superior-->
+               <img src="Images/logoB.png" alt="blanco">
+            </div>
+        </a>
+    </div>
+    <div class="sidebar" id="sidebar">    
+        <ul>
+            <li><a href="../Home/home.html">INICIO</a></li>
+            <li><a href="../About Us/About Us.html">SOBRE NOSOTROS</a></li>
+            <li><a href="Contact Us.html">CONTACTO</a></li>
+            <li><a href="../Services/Services.html">SERVICIOS</a></li>
+        </ul>
+    </div>
+
+    <header class="banner-section">
+        <div class="mid-plane">
+           <div class="content">
+             <h1 class="sub-heading animate__animated animate__zoomIn">CONTÁCTENOS</h1>
+             <p class="sub-heading animate__animated animate__zoomIn">¿TIENES ALGUNA PREGUNTA?,<br>¡NO DUDES EN ESCRIBIRNOS!</p>
+           </div>
+        </div>
+        <video muted autoplay loop src="Images/video1.mp4" type="video/mp4"></video>
+        <div class="capa"></div>
+    </header>
+
+    <section class="description-section" data-aos="fade-up">
+        <div class="description-text">
+            <h2>NO DEJES TU SEGURIDAD AL AZAR, CONFÍA EN LOS EXPERTOS.</h2>
+        </div>
+    </section>
+
+    <section class="images-section" data-aos="fade-up">
+       <div class="image-container">
+          <img src="Images/office.svg" alt="Visit Us">
+          <h3>Visita nuestras oficinas</h3>
+          <p>Descubre nuestras instalaciones y conoce como trabajamos para garantizar tu seguridad.</p>
+       </div>
+       <div class="image-container">
+          <img src="Images/expert.svg" alt="Call Us">
+          <h3>Agenda una cita</h3>
+          <p>Llama para agendar una cita con nuestros especialistas y recibe asesoramiento 
+              sobre tus necesidades especificas.</p>
+       </div>
+       <div class="image-container">
+          <img src="Images/data.svg" alt="Contact Us">
+          <h3>Solicita una auditoria</h3>
+          <p>Protéjase contra las amenazas cibernéticas y asegure la continuidad de su negocio.</p>
+       </div>
+    </section>
+
+    <section class="contact-form-section" data-aos="fade-up">
+        <div class="container">
+            
+            <h1 class="logo">Contact<span> Us</span></h1>
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+
+                    <form action="https://formspree.io/f/xgvwbygd" method="POST">
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label>Teléfono/Celular</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="affair" id="affair" required>
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label> 
+                            <textarea name="message" rows="4" id="message" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit"> Enviar </button>
+                        </p>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más Información</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>  Bello Horizonte</li>
+                        <li><i class="fas fa-phone"></i> +505 82758330</li>
+                        <li><i class="fas fa-envelope-open-text"></i> FortifyForce@outlook.com</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                    <p>FortifyForce.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-container" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.624824468816!2d-86.22355362495885!3d12.137802432609957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fd927f45308f%3A0x6d50af9f14ce064c!2sUniversidad%20Nacional%20Polit%C3%A9cnica%20(UNP)!5e0!3m2!1ses-419!2sni!4v1720014118129!5m2!1ses-419!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros Servicios</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Afiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Estatus de Orden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Auditoria</a></li>
+                        <li><a href="#">Conferencias</a></li>
+                        <li><a href="#">Consultorias de Ciberseguridad</a></li>
+                        <li><a href="#">Monitoreo Remoto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <div class="social-link">
+                            <a  class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a  class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a  class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a  class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a  class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 FortifyForce Security. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1200, // Duración de la animación en milisegundos
+            offset: 200, // Offset (desplazamiento) en píxeles
+            easing: 'ease-in-out', // Tipo de transición
+            once: true, // Animar sólo una vez
+            mirror: false // Animar elementos en scroll hacia arriba
+        });
+    </script>
+
+    <script src="Javascript/Contact Us.js"></script>
+</body>
+</html>
