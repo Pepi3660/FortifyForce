@@ -486,7 +486,7 @@ video{
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
 
     .navbar {
         padding: 10px 15px;
@@ -623,4 +623,145 @@ video{
         text-align: center;
     }
     
+}
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 80%;
+        overflow-x: hidden;
+        transition: width 0.4s;
+        z-index: 1;
+    }
+
+    .hamburger {
+        margin-top: 2px;
+    }
+  
+    .logoS img {
+        width: 70px;
+        height: auto;
+    }
+
+    .hero-section h1,
+    .hero-section p {
+        font-size: 1.7rem;
+    }
+
+    .description-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-section {
+        flex-direction: column;
+    }
+
+    .feature-text,
+    .feature-images {
+        width: 100%;
+    }
+
+
+    .feature-text h2 {
+        font-size: 14px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+    }
+
+    .shop-now-button {
+        font-size: 12px;
+    }
+
+    .feature-section {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 20px 30px;
+        margin-bottom: 20px; /* Añadido margen inferior */
+    }
+    
+    .feature-section_reverse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 30px;
+        margin-bottom: 20px; /* Añadido margen inferior */
+    }
+    
+    .feature-images {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px; /* Añadido margen inferior para dispositivos móviles */
+    }
+    
+    .feature-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .feature-text {
+        width: 50%;
+        padding: 20px;
+    }
+    
+    .feature-text h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .feature-text p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .shop-now-button {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    
+    .social-link {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px; /* Espacio arriba de los iconos */
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+   
 }
