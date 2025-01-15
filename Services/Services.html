@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Norma, Ricardo, Jarod">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/Services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Fortify Force</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <a href="../Home/home.html">
+            <div class="logoS">
+               <img src="Images/logoB.png" alt="blanco">
+            </div>
+        </a>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="../Home/home.html" class="transition-link">INICIO</a></li>
+            <li><a href="../About Us/About Us.html" class="transition-link">SOBRE NOSOTROS</a></li>
+            <li><a href="../Contact Us/Contact Us.html" class="transition-link">CONTACTO</a></li>
+            <li><a href="Services.html" class="transition-link">SERVICIOS</a></li>
+        </ul>
+    </div>
+
+    <header class="hero-section">
+        <div class="mid-plane">
+            <div class="content">
+                <h1 class="sub-heading animate__animated animate__zoomIn">ACERCA DE FORTIFY FORCE</h1>
+            </div>
+        </div>
+        
+        <video muted autoplay loop src="Images/VideoHero.mp4" type="video/mp4"></video>
+        
+        <div class="capa"></div>
+    </header>
+
+    <section class="description-section" data-aos="fade-up">
+        <div class="description-text">
+            <h2>"Cualquier tecnología lo suficientemente avanzada es indistinguible de la magia" – Arthur C. Clarke</h2>
+        </div>
+    </section>
+
+
+    <div class="container-services">
+        <!-- Servicio 1: consultorias -->
+        <section class="Services" data-aos="fade-up">
+            <div class="servImages">
+                <img src="Images/U1.svg" alt="Image 5" class="feature-image">
+            </div>
+            <div class="servText">
+                <h2>CONSULTORIAS DE CIBERSEGURIDAD</h2>
+                <p>En la actualidad la ciberseguridad se ha convertido en una herramienta
+                    fundamental para proteger los activos más valiosos de las organización.
+                    Nuestro servicio de consultoría de ciberseguridad
+                    está diseñado para proporcionar a tu empresa una evaluación exhaustiva,
+                    estrategias personalizadas y soluciones efectivas para mitigar riesgos
+                    y fortalecer tu postura de seguridad.</p>
+                <button onclick="location.href='../Contact Us/Contact Us.html'" class="buttonConsul">CONSULTAR</button>
+            </div>
+        </section>
+    
+        <!-- Servicio 2: Monitoreos -->
+        <section class="Services" data-aos="fade-up">
+            <div class="servImages">
+                <img src="Images/U8.svg" alt="Image 5" class="feature-image">
+            </div>
+            <div class="servText">
+                <h2>MONITOREO REMOTO</h2>
+                <p>Este servicio está diseñado para proporcionar vigilancia constante y protección proactiva, asegurando
+                    que tu infraestructura de TI  o tu casa esté siempre segura. Contamos con
+                    vigilancia 24/7, alertas en tiempo real, informes detallados y proteccion proactiva.</p>
+                <button onclick="location.href='../Contact Us/Contact Us.html'" class="buttonConsul">CONSULTAR</button>
+            </div>
+        </section>
+    
+        <!-- Servicio 3: Venta de alarmas -->
+        <section class="Services" data-aos="fade-up">
+            <div class="servImages">
+                <img src="Images/U17.svg" alt="Image 5" class="feature-image">
+            </div>
+            <div class="servText">
+                <h2>SISTEMAS DE SEGURIDAD</h2>
+                <p>Nuestros equipos de seguridad son más que una simple defensa; son una fortaleza digital que asegura la
+                    continuidad y la tranquilidad de tu negocio o de tu hogar.<br>
+                </p>
+                <p>En FortifyForce Security, entendemos que
+                    cada negocio u hogar es único, por lo que nuestras soluciones están diseñadas para adaptarse a sus necesidades
+                    específicas. Además, con nuestros sistemas obtendrás una protección integral y personalizada que garantiza la
+                    seguridad y continuidad de tus actividades.
+                </p>
+                <button onclick="location.href='../Contact Us/Contact Us.html'" class="buttonConsul">CONSULTAR</button>
+            </div>
+        </section>
+    </div>
+    
+      <!-- Footer -->
+      <footer class="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros Servicios</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Afiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Compras</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Estatus de Orden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Auditoria</a></li>
+                        <li><a href="#">Conferencias</a></li>
+                        <li><a href="#">Consultorias de Ciberseguridad</a></li>
+                        <li><a href="#">Monitoreo Remoto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-link">
+                        <div class="social-link">
+                            <a  class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a  class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a  class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a  class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a  class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 FortifyForce Security. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ 
+    <script src="Javascript/Services.js"></script>
+</body>
+</html>

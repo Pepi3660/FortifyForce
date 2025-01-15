@@ -1,0 +1,529 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+    background-color: #093b69;
+    padding: 10px;
+    z-index: 1000; /* nav encima del contenido */
+    gap: 30px;
+}
+
+.hamburger {
+    margin-top: -5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.hamburger .line {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+}
+
+.hamburger.active .line3 {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.hamburger.active:hover .line1,
+.hamburger.active:hover .line3 {
+    background-color: #add8e6;
+}
+
+.logoS img {
+    width: 95px;
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 70%;
+    background-color: #093b69;
+    overflow-x: hidden;
+    transition: height 0.4s;
+    z-index: 1;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li:first-child {
+    margin-top: 130px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a {
+    color: #dee2e6;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #add8e6;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    background-color: #5c677d; 
+}
+
+.mid-plane {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.description-section {
+    background-color: #093b69;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.description-text {
+    padding: 20px;
+    opacity: 0.7;
+}
+
+.description-text h2{
+    font-size: 1.7rem;
+}
+
+/* Estilos de las tarjetas de los servicios */
+.container-services {
+    margin: 40px 0; /* Ajusta el margen negativo según necesites */
+    padding-top: 80px; /* Ajusta según el tamaño de tu navbar */
+}
+
+.Services {
+    padding-top: 80px; /* Ajusta según el tamaño de tu navbar */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*invertir una seccion (parcialmente anulado)
+.reverse {
+    flex-direction: row-reverse;
+}
+*/
+
+.servImages img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.servText {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #5c677d;
+}
+
+.servText h2 {
+    color:#00509d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servText p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.buttonConsul {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #00509d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.buttonConsul:hover {
+    background-color: #e4405f;
+}
+
+/* Footer */
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #093b69;
+    padding: 80px 0;
+    color: #dee2e6; /* Color del texto principal */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Añadido para espacio en los bordes */
+}
+
+/* Estilos para las filas del footer (flexbox) */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribución uniforme de las columnas */
+}
+
+/* Estilos para los bloques de enlaces */
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px; /* Espacio entre bloques de enlaces */
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    margin-bottom: 15px; /* Menos espacio entre título y lista */
+    font-weight: 500;
+    border-bottom: 2px solid #e4405f;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px; /* Menos espacio entre elementos de la lista */
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #dee2e6;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #e4405f;
+    padding-left: 6px;
+}
+
+/* Estilos para los iconos sociales */
+:root {
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --whatsapp: #25D366;
+    --linkedin: #1f6594;
+}
+
+.social-link {
+    margin-top: 20px; /* Espacio arriba de los iconos */
+    display: flex;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px; /* Centrar el icono verticalmente */
+    text-align: center; /* Centrar el icono horizontalmente */
+    background-color: #093b69;
+    border-radius: 50%;
+    color: #dee2e6;
+    transition: all .5s ease;
+    font-size: 18px; /* Tamaño del icono */
+    margin-right: 15px; /* Espacio entre iconos */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Cambiar color al pasar el mouse */
+.social-link a:hover {
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.social-link a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+/* Especificar colores para cada red social en el hover */
+.social-link a.facebook:hover::after { background-color: var(--facebook); }
+.social-link a.instagram:hover::after { background-color: var(--instagram); }
+.social-link a.twitter:hover::after { background-color: var(--twitter); }
+.social-link a.whatsapp:hover::after { background-color: var(--whatsapp); }
+.social-link a.linkedin:hover::after { background-color: var(--linkedin); }
+
+/* Para asegurar que el icono se mantenga visible */
+.social-link a .fab {
+    position: relative;
+    z-index: 1;
+}
+
+/* Para asegurar que el color de fondo cubra toda la area del enlace */
+.social-link a::after {
+    z-index: 0;
+    opacity: 0;
+}
+
+.social-link a:hover::after {
+    opacity: 1;
+}
+
+/* Estilos para el texto de copyright */
+.copyright {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+/* Transiciones  */
+.page-transition-enter {
+    opacity: 0;
+    transform:none;
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.90s ease-out, transform 0.45s ease-out;
+}
+
+.page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transform: none;
+    transition: opacity 0.68s ease-out, transform  0.90s ease-out;
+}
+
+/*Para dispositivos mobile*/
+@media (max-width: 768px) {
+  
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    body {
+        padding-top: 80px; /* Ajusta según el tamaño de tu navbar en móviles */
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 80%;
+        overflow-x: hidden;
+        transition: width 0.4s;
+        z-index: 1;
+    }
+    
+     .hamburger{
+       margin-top: 2px;
+     }
+  
+    .logoS img {
+        width: 70px;
+        height: auto;
+    }
+  
+    .container-services {
+        padding-top: 80px; /* para la transicion */
+    }
+
+    .Services {
+        flex-direction: column;
+        margin-bottom: 20px;
+        background: #fff; /* Fondo oscuro con transparencia */
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px); /* Efecto glass */
+        margin-bottom: 30px;
+    }
+
+    .reverse .servImages {
+        order: 2;
+    }
+
+    .reverse .servText {
+        order: 1;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .servImages img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .servText {
+        margin: 20px 0;
+        
+    }
+
+    .servText h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+
+    .servText p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .buttonConsul {
+     font-size: 1rem;
+     padding: 10px 15px;
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px; /* Espacio arriba de los iconos */
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Transiciones  */
+    .page-transition-enter,
+    .page-transition-enter-active,
+    .page-transition-exit,
+    .page-transition-exit-active {
+        transform: none; /* Asegura que no haya transformaciones que afecten el posicionamiento en dispositivos móviles */
+    }
+
+}
+
